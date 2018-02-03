@@ -2,6 +2,7 @@ package com.brilliantbird.hifi_android;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.brilliantbird.hifi_android.exception.CustomException;
 
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("status","application started");
         throw new CustomException("Intentionally thrown");
     }
 }
