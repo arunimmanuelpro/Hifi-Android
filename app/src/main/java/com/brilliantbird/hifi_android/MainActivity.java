@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i("leader","app devalopment");
-        Log.i("result","application started");
+        Log.d("result","application started");
         throw new CustomException("Intentionally thrown");
     }
 }
